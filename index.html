@@ -1,0 +1,48 @@
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&display=swap');
+    </style>
+    <title>Cadastro</title>	
+</head>
+<body>
+	<main>
+		<header>
+			<h1 class="cabecalhoPrincipal-titulo">CADASTRO DE PROVAS</h1>
+		</header>
+		<section class="container">
+			<form id="form-main">
+				<div class="grupo-main">
+					<label class="titulo" >Título da Prova</label>
+					<input  id="title-prova" class="tProva"  type="text" required placeholder="Nome da prova" class="titulo-prova" >
+					<!-- digitar a questão -->
+						
+					<div class="grupo">
+						<div class= "questao">
+						<label for="descrição">Questão:</label>
+						<input id="descricao-questao" name="questao" type="text" placeholder="Digite a questão" class="descricao">
+						<label for="num-questao">Nº:</label>
+						<input id="numeroQ" name="altura"  placeholder="0" class="numero-questao">
+					</div>
+					
+					<div id="alternativa1" class = "alternativa-container">
+						<label for="descrição">Alternativa:</label>
+						<input id="alternativa" name="Alternativa 1" type="text" placeholder="" class="alternativa-questao">
+						<input  type= "checkbox" class="sim" >Confirmo que esta resposta é correta.</input>
+					</div>
+				</div>	
+					
+			</form>
+			<button type="submit" id="enviarProva" class="enviar-prova">Enviar Prova</button>			
+		</section>
+	</main>
+   
+
+	<script src="javascript.js" defer=""></script>
+	<script src="mandarDados.js" defer=""></script>
+</body>
+</html>
