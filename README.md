@@ -9,4 +9,6 @@ Depois vc salva apenas a alternativa, e escreve outra alternativa novamentee ass
 Quando terminar de enviar todas as alternativas, você deve salvar a questão e assim  todas as alternativas que vc salvou ficarão juntas com a questão.
 
 Então para criar uma nova Alternativa é só preencher o campo da questão com novas infos e salvas as alternativas primeiro.
-Ao final de tudo vc deve clicar em ENVIAR RPOVA.
+Ao final de tudo vc deve clicar em ENVIAR PROVA.
+
+#Ainda faltam muitas atualizações pra ficar bom e funcional...
