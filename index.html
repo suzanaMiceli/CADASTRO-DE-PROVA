@@ -1,4 +1,4 @@
-html lang="pt-br">
+<html lang="pt-br">
 
 <head>
 	<meta charset="utf-8">
@@ -20,36 +20,28 @@ html lang="pt-br">
 			<form id="form-main">
 				<div class="grupo-main">
 					<label class="titulo">Título da Prova</label>
-					<input id="title-prova" class="tProva" type="text" placeholder="Nome da prova" class="titulo-prova">
-					<label for="ID-PROVA">ID:</label>
-					<input id="provaId" name="ID" placeholder="0" class="inputPequeno">
+          			<input id="provaId" name="ID" placeholder="ID" class="inputPequeno">
+
+					<input id="title-prova" class="tProva" type="text" placeholder="Nome da prova" class="titulo-prova">					
 					<!-- digitar a questão -->
+        		</div>
+				<div class="grupo">
+					<div class="questao">
+						<label for="descrição" class ="titulo">Questão:</label>
+						<input id="numeroQ" name="num" placeholder="Nº" class="inputPequeno">
+						<input id="descricao-questao" name="questao" type="text" placeholder="Digite a questão"	class="descricao">
+						<label for="descrição" class="titulo-alternativa">Quantas alternativas?</label>
+						<input id="quant" name="ID" placeholder="Qtd de Alternativas" class="inputPequeno">
+						<button type="buttom" class="adcAlt"><img class="img-check" src="check-verde.png" alt=""></button>
 
-					<div class="grupo">
-						<div class="questao">
-							<label for="descrição" class ="titulo">Questão:</label>
-							<input id="descricao-questao" name="questao" type="text" placeholder="Digite a questão"
-								class="descricao">
-							<label for="num-questao">Nº:</label>
-							<input id="numeroQ" name="num" placeholder="0" class="inputPequeno">
-							<button type="buttom" class="adc-questao">salvar questao</button>
+					</div>
 
-						</div>
-
-						<div id="alternativa1" class="alternativa-container">
-							<label for="descrição" class="titulo" >Alternativa:</label>
-							<input id="alternativa" name="Alternativa 1" type="text" placeholder=""
-								class="alternativa-questao">
-							<label for="num-alternativa">Nº:</label>
-							<input id="numeroA" name="num" placeholder="0" class="inputPequeno">
-	
-							<button type="buttom" class="adcAlt">Salvar Aternativa</button>
-							<input type="checkbox" class="sim" >Confirmo que esta resposta é correta.</input>
-						</div>
-						<div id="adcAlternativa"></div>
-
+					<div id="alternativa1" class="alternativa-container"></div>
+						
+					
+				</div>
 			</form>
-			
+			<button type="buttom" class="salva-questao">salvar questao</button>
 			<button type="submit" id="enviarProva" class="enviar-prova">Enviar Prova</button>
 
 		</section>
