@@ -1,83 +1,114 @@
 body {
-  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f4f5f6;
+  background-image: url("193.jpg");
   color: #1c1f2a;
   font-family: "Open Sans Condensed", sans-serif;
   letter-spacing: 0.5;
 }
 main {
-  background-color: #ffffff;
+  background-color: #fcfdffed;
+  margin: 50px;
   border-radius: 15px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+  box-shadow: rgba(36, 36, 68, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.grupo-main,
+.questao {
+  width: fit-content;
 }
 
 label {
   font-size: 25px;
+  display: inline-grid;
 }
 .titulo {
   display: block;
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 600px;
-  margin-left: 30px;
+  width: 31em;
+  margin: 10px;
   padding: 20px;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .inputPequeno {
   width: 30px;
   height: 35px;
+  margin-right: 1px;
 }
 
 h1 {
   text-align: center;
   font-size: 50px;
 }
+
 .enviar-prova {
-  margin-left: 110px;
+  margin-left: 70px;
   cursor: pointer;
   width: 350px;
   height: 40px;
   margin-top: 30px;
   font-size: 20px;
+  background-color: #191970;
+  color: white;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
 }
 .enviar-prova:hover {
-  transition: 0;
-  background-color: rgb(84 21 96);
-  color: white;
+  transition: 5ms;
+  background-color: #191970;
+  color: rgb(255, 255, 255);
 
   opacity: 0.7;
 }
+
+.descricao,
 .tProva {
-  width: 365px;
-  height: 35px;
-}
-.descricao {
-  width: 418px;
-  margin-right: 10px;
-  height: 35px;
-}
-.numero-questao {
-  height: 35px;
-}
-.alternativa-questao {
-  width: 400px;
+  width: 450px;
   margin-right: 10px;
   height: 35px;
 }
 
 input {
   margin-bottom: 15px;
-  border-color: #7935b282;
+  border-color: #3a4593;
   border-width: 1;
   border-radius: 3px;
+}
+
+.salva-questao {
+  display: none;
+  margin-right: auto;
+  margin-left: auto;
+  float: left;
+  height: 35px;
+  width: 180px;
+  cursor: pointer;
+}
+.adcAlt {
+  width: 30px;
+  height: 35px;
+  cursor: pointer;
+}
+#quant {
+  margin-left: 60px;
+}
+
+.img-check {
+  height: 10px;
+  width: 15px;
+}
+
+.sim {
+  margin-right: 2px;
+}
+#alternativa1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
